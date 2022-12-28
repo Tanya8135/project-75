@@ -4,8 +4,14 @@
   }
 }
 
+@mixin mobile {
+  @media screen and (min-width: 420px) and (max-width: 1439px) {
+    @content;
+  }
+}
+
 @mixin desktop {
-  @media screen and (min-width: 1439px) and (max-width: 1920px) {
+  @media screen and (min-width: 1440px) and (max-width: 1920px) {
     @content;
   }
 }
