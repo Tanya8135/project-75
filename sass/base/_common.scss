@@ -1,0 +1,23 @@
+.container {
+    width: 100%;
+  max-width: 1168px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+// width: 1440px;
+// 320px
+// breakpoint 420px
+
+.list {
+    padding: 0;
+    list-style: none;
+  }
+  
+  .site-nav {
+    display: inline-flex;
+  }
+
+  .section {
+    padding: 96px 0;
+  }
