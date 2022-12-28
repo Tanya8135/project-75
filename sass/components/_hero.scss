@@ -1,0 +1,33 @@
+.hero {
+  padding: 80px 0;
+}
+
+.hero-title {
+  @include font(32px, 500, 1.25);
+
+  position: relative;
+  padding-bottom: 40px;
+  color: $hero-title-gray;
+  text-transform: uppercase;
+
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -50px;
+    left: 184px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-image: $circle-hero-bg;
+  }
+}
+
+.hero-text {
+  line-height: 1.5;
+  padding-bottom: 40px;
+}
+
+.hero-btn {
+    @extend %btn-basic;
+}
