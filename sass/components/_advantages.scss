@@ -3,7 +3,7 @@
 
   &::before {
     position: absolute;
-    z-index: 100;
+    z-index: -1;
     top: -24px;
     left: 0;
     width: 396px;
@@ -11,8 +11,73 @@
     background-image: $bg-img-section;
     content: '';
   }
+
+  @include min-mobile {
+    &::before {
+      width: 300px;
+    }
+  }
+
+  @include desktop {
+    &::before {
+      width: 600px;
+    }
+  }
 }
 
 /* heading-title, heading-subtitle, heading-text - находяться в _common.scss */
 
+.advantage-list {
+  padding-top: 48px;
+}
 
+.advantage-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.advantage-card {
+  padding: 42px 40px 32px 40px;
+  border-radius: 8px;
+  // margin-bottom: 32px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: $bg-white;
+    box-shadow: 0px 5.87438px 31.33px rgba(155, 148, 148, 0.17);
+  }
+}
+
+.advantage-card-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: $brand-color;
+  background-color: $bg-white;
+  border-radius: 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.04);
+  width: 48px;
+  height: 48px;
+  margin-bottom: 16px;
+
+  transition: background-color 350ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 350ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    fill: $fill-hover-white;
+
+    background-color: $brand-color;
+  }
+}
+
+.advantage-card-title {
+  @include font(24px, 500, 1.5);
+
+  margin-bottom: 8px;
+}
+
+.advantage-card-text {
+  @include short-font(14px, 1.6);
+
+  letter-spacing: 0.04em;
+}

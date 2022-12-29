@@ -1,4 +1,8 @@
 %btn-basic {
+  @include desktop {
+    cursor: pointer;
+  }
+
   display: flex;
   align-items: center;
   color: $btn-text-color;
@@ -14,4 +18,14 @@
   border: none;
   cursor: none; /* только для mobile версии */
   fill: $arrow-color;
+
+  &:hover {
+    background: $btn-hover-active;
+    color: $brand-color;
+    fill: $brand-color;
+  }
+
+  &:active {
+    box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.4);
+  }
 }
