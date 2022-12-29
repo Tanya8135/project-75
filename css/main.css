@@ -49,7 +49,7 @@ img {
 /* flex-grow: 1; - свойство определяет коэффициент увеличения гибкого элемента по отношению 
 к другим гибким элементам внутри одного контейнера при условии, что в нем есть свободное 
 пространство. */
-.hero-btn {
+.btn-basic {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -93,7 +93,29 @@ img {
 }
 
 .section {
-  padding: 96px 0;
+  padding-bottom: 96px;
+}
+
+.heading-title {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.8;
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  color: #f3b562;
+}
+
+.heading-subtitle {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 1;
+  margin: 0 0 40px;
+  text-transform: uppercase;
+  color: #647b64;
+}
+
+.heading-text {
+  margin: 0 0 40px;
 }
 
 .header-nav {
@@ -128,7 +150,7 @@ img {
   font-weight: 500;
   line-height: 1.25;
   position: relative;
-  padding-bottom: 40px;
+  margin: 0 0 40px;
   color: #333333;
   text-transform: uppercase;
 }
@@ -146,5 +168,21 @@ img {
 
 .hero-text {
   line-height: 1.5;
-  padding-bottom: 40px;
-}/*# sourceMappingURL=main.css.map */
+  margin: 0 0 40px;
+}
+
+.advantages {
+  position: relative;
+}
+.advantages::before {
+  position: absolute;
+  z-index: 100;
+  top: -24px;
+  left: 0;
+  width: 396px;
+  height: 160px;
+  background-image: linear-gradient(164.26deg, rgba(239, 128, 49, 0) -335.51%, rgba(239, 128, 49, 0.15) -20.24%, rgba(239, 128, 49, 0) 119.45%);
+  content: "";
+}
+
+/* heading-title, heading-subtitle, heading-text - находяться в _common.scss *//*# sourceMappingURL=main.css.map */

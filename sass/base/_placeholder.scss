@@ -1,17 +1,17 @@
 %btn-basic {
-    display: flex;
-    align-items: center;
-    color: $btn-text-color;
-    line-height: 1.5;
+  display: flex;
+  align-items: center;
+  color: $btn-text-color;
+  line-height: 1.5;
   text-transform: uppercase;
 
-    padding: 24px;
-    gap: 16px;
-    border-radius: 2px;
-    background: $btn-bg;
-    box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.19);
-    outline: none;
-    border: none;
-    cursor: none; /* только для mobile версии */
-    fill: $arrow-color;
+  padding: 24px;
+  gap: 16px;
+  border-radius: 2px;
+  background: $btn-bg;
+  box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.19);
+  outline: none;
+  border: none;
+  cursor: none; /* только для mobile версии */
+  fill: $arrow-color;
 }

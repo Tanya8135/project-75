@@ -6,7 +6,7 @@
   @include font(32px, 500, 1.25);
 
   position: relative;
-  padding-bottom: 40px;
+  margin: 0 0 40px;
   color: $hero-title-gray;
   text-transform: uppercase;
 
@@ -25,9 +25,9 @@
 
 .hero-text {
   line-height: 1.5;
-  padding-bottom: 40px;
+  margin: 0 0 40px;
 }
 
-.hero-btn {
+.btn-basic {
     @extend %btn-basic;
 }
