@@ -1,8 +1,15 @@
 @charset "UTF-8";
+::-moz-selection {
+  color: #ffffff;
+  background-color: #4f4f4f; /* применяет стили к части документа, который был выделен пользователем (например, с помощью мыши) */
+}
+::selection {
+  color: #ffffff;
+  background-color: #4f4f4f; /* применяет стили к части документа, который был выделен пользователем (например, с помощью мыши) */
+}
+
 html {
-  scroll-behavior: smooth; /* - плавная прокрутка; 
-     instant - мгновенная прокрутка; 
-     auto - на усмотрение браузера. */
+  scroll-behavior: smooth; /* плавная прокрутка скрол */
 }
 
 body {
@@ -12,24 +19,6 @@ body {
   line-height: 1.5;
   font-family: "Montserrat", sans-serif;
   background-color: #f3f1ee;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none; /* изменяет вид маркера для каждого элемента 
-списка (используется только в таком написании). */
-}
-
-link {
-  text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-p {
-  margin: 0;
 }
 
 img {
@@ -49,6 +38,24 @@ img {
 /* flex-grow: 1; - свойство определяет коэффициент увеличения гибкого элемента по отношению 
 к другим гибким элементам внутри одного контейнера при условии, что в нем есть свободное 
 пространство. */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none; /* изменяет вид маркера для каждого элемента 
+списка (используется только в таком написании). */
+}
+
+link {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
 .btn-basic {
   display: -webkit-box;
   display: -ms-flexbox;
