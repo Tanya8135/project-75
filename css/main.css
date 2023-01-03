@@ -1,8 +1,45 @@
 @charset "UTF-8";
+.btn-basic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fefefe;
+  line-height: 1.5;
+  text-transform: uppercase;
+  padding: 24px;
+  gap: 16px;
+  border-radius: 2px;
+  background: linear-gradient(102.3deg, #647b64 -4.62%, #66ac66 178.22%);
+  -webkit-box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.19);
+          box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.19);
+  outline: none;
+  border: none;
+  cursor: none; /* только для mobile версии */
+  fill: #fefefe;
+}
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+  .btn-basic {
+    cursor: pointer;
+  }
+}
+.btn-basic:hover {
+  background: #fefefe;
+  color: #647b64;
+  fill: #647b64;
+}
+.btn-basic:active {
+  -webkit-box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.4);
+          box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.4);
+}
+
 ::-moz-selection {
   color: #ffffff;
   background-color: #4f4f4f; /* применяет стили к части документа, который был выделен пользователем (например, с помощью мыши) */
 }
+
 ::selection {
   color: #ffffff;
   background-color: #4f4f4f; /* применяет стили к части документа, который был выделен пользователем (например, с помощью мыши) */
@@ -45,104 +82,22 @@ ul {
 списка (используется только в таком написании). */
 }
 
-link {
-  text-decoration: none;
-}
-
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p {
-  margin: 0;
-}
-
-.btn-basic {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #fefefe;
-  line-height: 1.5;
-  text-transform: uppercase;
-  padding: 24px;
-  gap: 16px;
-  border-radius: 2px;
-  background: linear-gradient(102.3deg, #647b64 -4.62%, #66ac66 178.22%);
-  -webkit-box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.19);
-          box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.19);
-  outline: none;
-  border: none;
-  cursor: none; /* только для mobile версии */
-  fill: #fefefe;
-}
-@media screen and (min-width: 1440px) and (max-width: 1920px) {
-  .btn-basic {
-    cursor: pointer;
-  }
-}
-.btn-basic:hover {
-  background: #fefefe;
-  color: #647b64;
-  fill: #647b64;
-}
-.btn-basic:active {
-  -webkit-box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.4);
-          box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.4);
-}
-
-.container {
-  margin: 0 auto;
-  padding: 0 16px;
-}
-@media screen and (min-width: 420px) and (max-width: 1439px) {
-  .container {
-    padding: 0 24px;
-    width: 420px;
-  }
-}
-@media screen and (min-width: 1440px) and (max-width: 1920px) {
-  .container {
-    width: 1440px;
-  }
+  margin-top: 0;
 }
 
 .list {
-  padding: 0;
   list-style: none;
 }
 
-.section {
-  padding-bottom: 96px;
-}
-@media screen and (min-width: 1440px) and (max-width: 1920px) {
-  .section {
-    padding-bottom: 112px;
-  }
-}
-
-.heading-title {
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 1.8;
-  margin: 0 0 8px;
-  text-transform: uppercase;
-  color: #f3b562;
-}
-
-.heading-subtitle {
-  font-size: 32px;
-  font-weight: 500;
-  line-height: 1;
-  margin: 0 0 40px;
-  text-transform: uppercase;
-  color: #647b64;
-}
-
-.heading-text {
-  margin: 0 0 40px;
-  letter-spacing: 0.04em;
+.link {
+  text-decoration: none;
 }
 
 .header-nav {

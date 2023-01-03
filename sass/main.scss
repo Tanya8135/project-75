@@ -1,11 +1,21 @@
-@import './base/variables';
-@import './base/base';
-@import './base/utils';
-@import './base/mixin';
-@import './base/placeholder';
-@import './base/common';
+// Utils 
+// @import './utils/fonts';
+@import './utils/variables';
+// @import './utils/indents';
+@import './utils/mixin';
+@import './utils/placeholders';
 
+// Base
+
+@import './base/base';
+@import './base/reset';
+
+// Components
 @import './components/header';
 @import './components/hero';
 @import './components/advantages';
 @import './components/features';
+
+
+// Layuot
+@import './layout/container';
