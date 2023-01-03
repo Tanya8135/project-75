@@ -1,12 +1,11 @@
-// Utils 
+// Utils
 // @import './utils/fonts';
 @import './utils/variables';
 @import './utils/indents';
 @import './utils/mixin';
-@import './utils/placeholders';
+@import './utils/placeholder';
 
 // Base
-
 @import './base/base';
 @import './base/reset';
 
@@ -15,7 +14,6 @@
 @import './components/hero';
 @import './components/advantages';
 @import './components/features';
-
 
 // Layuot
 @import './layout/container';

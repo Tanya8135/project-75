@@ -35,23 +35,29 @@
 .features-list {
   @include desktop {
     display: flex;
+    gap: 44px;
+    flex-wrap: wrap;
   }
 
   position: relative;
 }
 
 .features-item {
-  &:not(:last-child) {
-    margin-bottom: 32px;
-  }
-
-  @include desktop {
-    &:not(:last-child) {
-      margin-right: 32px;
-      margin-bottom: 0;
-    }
-  }
+  flex-basis: calc((100% - 88px) / 3);
 }
+
+// .features-item {
+//   &:not(:last-child) {
+//     margin-bottom: 32px;
+//   }
+
+//   @include desktop {
+//     &:not(:last-child) {
+//       margin-right: 32px;
+//       margin-bottom: 0;
+//     }
+//   }
+// }
 
 // .features-item:not(:last-child) {
 //   margin-bottom: 32px;
@@ -85,4 +91,5 @@
 
 .features-text {
   letter-spacing: 0.04em;
+  margin-bottom: 0;
 }
