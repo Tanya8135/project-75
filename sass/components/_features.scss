@@ -1,0 +1,88 @@
+.features {
+  position: relative;
+
+  @include desktop {
+    &::before {
+      position: absolute;
+      z-index: -1;
+      bottom: 64px;
+      right: 0;
+      width: 600px;
+      height: 160px;
+      background-image: $bg-img-section;
+      transform: rotate(180deg);
+      content: '';
+    }
+  }
+
+  &::after {
+    position: absolute;
+    z-index: -1;
+    bottom: 64px;
+    left: 0;
+    width: 224px;
+    height: 224px;
+    background-image: url('../images/decor.png');
+    transform: rotate(180deg);
+    content: '';
+
+    @include retina {
+      background-image: url('../images/decor@2.png'); /* не нравится как отображается в 2x */
+    }
+  }
+}
+
+.features-list {
+  @include desktop {
+    display: flex;
+  }
+
+  position: relative;
+}
+
+.features-item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  @include desktop {
+    &:not(:last-child) {
+      margin-right: 32px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+// .features-item:not(:last-child) {
+//   margin-bottom: 32px;
+// }
+
+.features-card {
+  padding: 64px 50px 59px 50px;
+  border-radius: 8px;
+  background: $bg-white-gradient;
+  fill: $brand-color;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background: $brand-color;
+    color: $white-text-hover;
+    fill: $fill-hover-white;
+  }
+}
+
+.features-title {
+  @include font(24px, 500, 1.5);
+
+  padding-top: 32px;
+  margin-bottom: 16px;
+}
+
+.features-style {
+  text-transform: uppercase;
+}
+
+.features-text {
+  letter-spacing: 0.04em;
+}

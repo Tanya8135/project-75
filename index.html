@@ -44,6 +44,8 @@
       <!-- Hero -->
       <section class="hero">
         <div class="container">
+          <div class="hero-container">
+            <div class="hero-content">
           <h1 class="hero-title">
             Awesome User Interface is what we can apply
           </h1>
@@ -60,16 +62,27 @@
               <use href="./images/icons.svg#icon-arrow"></use>
             </svg>
           </button>
+          </div>
+          <img class="hero-img" 
+            srcset="./images/image-hero.png 400w, ./images/image-hero@2.png 400w"
+
+            sizes="(min-width: 1168px) 400px, 100vw"
+            src="./images/image-hero.png"
+            alt="Woman is playing tennis"
+          /> <!-- задала класс, чтобы покаместь спрятать для mobile -->
+          </div>
         </div>
       </section>
 
       <!-- Advantages -->
       <section class="section advantages">
         <div class="container">
+          <div class="advantages-container">
+          <div class="advantages-content">
           <h2 class="heading-title" data-aos="fade-right">Advantages</h2>
           <!-- AOS — это современная библиотека, которая способна менять позиции элементов при скролле. Богатый функционал, есть возможность создавать свои анимации. -->
-          <p class="heading-subtitle">Our Benefits</p>
-          <p class="heading-text">
+          <p class="heading-subtitle advantages-subtitle">Our Benefits</p>
+          <p class="heading-text advantages-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis
             vitae nullam aliquet dignissim quis. Vel, faucibus ac justo aliquam
             donec enim, commodo fermum vitae. Et velit sceleris, commodo
@@ -82,6 +95,7 @@
               <use href="./images/icons.svg#icon-arrow"></use>
             </svg>
           </button>
+</div>
 
           <ul class="advantage-list">
             <li class="advantage-item">
@@ -115,10 +129,10 @@
             <li class="advantage-item">
               <div class="advantage-card">
                 <div class="advantage-card-icon">
-                <svg width="24" height="24">
-                  <use href="./images/icons.svg#icon-bus"></use>
-                </svg>
-</div>
+                  <svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-bus"></use>
+                  </svg>
+                </div>
                 <h3 class="advantage-card-title">Bus Trip</h3>
                 <p class="advantage-card-text">
                   Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit
@@ -129,13 +143,67 @@
             <li class="advantage-item">
               <div class="advantage-card">
                 <div class="advantage-card-icon">
-                <svg width="24" height="24">
-                  <use href="./images/icons.svg#icon-driving"></use>
-                </svg>
+                  <svg width="24" height="24">
+                    <use href="./images/icons.svg#icon-driving"></use>
+                  </svg>
                 </div>
                 <h3 class="advantage-card-title">Road Trip</h3>
                 <p class="advantage-card-text">
                   Lorem ipsum dolor sit ame, consectetur adipiscing elit. Sit
+                  quis vitae
+                </p>
+              </div>
+            </li>
+          </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Features -->
+      <section class="features section">
+        <div class="container">
+          <h2 class="heading-title">Features</h2>
+          <p class="heading-subtitle">What we can apply</p>
+
+          <ul class="features-list">
+            <li class="features-item">
+              <div class="features-card">
+                <svg width="64" height="64" class="features-icon">
+                  <use href="./images/icons.svg#icon-python"></use>
+                </svg>
+                <h3 class="features-title">
+                  <span class="features-style">MOT</span> consectet
+                </h3>
+                <p class="features-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                  quis vitae
+                </p>
+              </div>
+            </li>
+            <li class="features-item">
+              <div class="features-card">
+                <svg width="64" height="64" class="features-icon">
+                  <use href="./images/icons.svg#icon-iost"></use>
+                </svg>
+                <h3 class="features-title">
+                  <span class="features-style">MOT</span> consectet
+                </h3>
+                <p class="features-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                  quis vitae
+                </p>
+              </div>
+            </li>
+            <li class="features-item">
+              <div class="features-card">
+                <svg width="64" height="64" class="features-icon">
+                  <use href="./images/icons.svg#icon-stacks"></use>
+                </svg>
+                <h3 class="features-title">
+                  <span class="features-style">MOT</span> consectet
+                </h3>
+                <p class="features-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
                   quis vitae
                 </p>
               </div>
