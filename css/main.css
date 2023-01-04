@@ -491,6 +491,10 @@ p {
   text-transform: uppercase;
 }
 
+.heading-text {
+  letter-spacing: 0.04em;
+}
+
 .hero {
   padding: 80px 0;
 }
