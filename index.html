@@ -232,20 +232,22 @@
       </section>
 
       <!-- About -->
-      <section class="about" id="about">
+      <section class="about section" id="about">
         <div class="container">
           <img
             srcset="
-              ./images/people_360.jpg    360w,
-              ./images/people_570.jpg    570w,
-              ./images/people@2_360.jpg  720w,
-              ./images/people@2_570.jpg 1140w
+              ./images/320/people_360.jpg     360w,
+              ./images/1200/people_570.jpg    570w,
+              ./images/320/people@2_360.jpg   720w,
+              ./images/1200/people@2_570.jpg 1140w
             "
             sizes="(min-width: 1200px) 570px, (min-width: 320px) 360px, 100vw"
-            src="./images/people_360.jpg"
+            src="./images/320/people_360.jpg"
             alt="People-team"
           />
-          <h2 class="heading-title about-title" data-aos="fade-right">About us</h2>
+          <h2 class="heading-title about-title" data-aos="fade-right">
+            About us
+          </h2>
           <p class="heading-subtitle">Who we are</p>
           <p class="heading-text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis
@@ -261,6 +263,60 @@
               <use href="./images/icons.svg#icon-arrow"></use>
             </svg>
           </button>
+        </div>
+      </section>
+
+      <!-- Our team -->
+      <section class="our-team section">
+        <div class="container">
+          <h2 class="heading-title">Our Team</h2>
+          <p class="heading-subtitle">How we look like</p>
+
+          <ul class="our-team-list">
+            <li class="our-team-item">
+              <!-- задать background on <li> -->
+              <img src="./images/320/persone1_180.png" alt="Man in pink" />
+
+              <div class="test">
+                <p class="our-team-subtitle">CTO May & Baker</p>
+                <h3 class="our-team-title">Tayo Oshinuwa</h3>
+              </div>
+
+              <blockquote>
+                “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                quis vitae“
+              </blockquote>
+              <!-- Blockquote -- oписание HTML-элемент <blockquote> (от англ. Block Quotation) указывает на то, что заключённый в нем текст является развёрнутой цитатой. Обычно он (текст) визуально выделяется наклонным (смотри Примечание (en-US), где говорится о том, как это изменить) -->
+            </li>
+              <li class="our-team-item">
+                <!-- задать background on <li> -->
+                <img src="./images/320/persone2_170.png" alt="Man in pink" />
+  
+                <div class="test">
+                  <p class="our-team-subtitle">CTO May & Baker</p>
+                  <h3 class="our-team-title">Tayo Oshinuwa</h3>
+                </div>
+  
+                <blockquote>
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                  quis vitae“
+                </blockquote>
+            </li>
+              <li class="our-team-item">
+                <!-- задать background on <li> -->
+                <img src="./images/320/persone3_180.png" alt="Man in pink" />
+  
+                <div class="test">
+                  <p class="our-team-subtitle">CTO May & Baker</p>
+                  <h3 class="our-team-title">Tayo Oshinuwa</h3>
+                </div>
+  
+                <blockquote>
+                  “Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit
+                  quis vitae“
+                </blockquote>
+            </li>
+          </ul>
         </div>
       </section>
     </main>

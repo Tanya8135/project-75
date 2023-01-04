@@ -301,6 +301,43 @@ p {
   margin-left: 40px;
 }
 
+.our-team-item {
+  position: relative;
+  background: linear-gradient(358.27deg, rgba(100, 123, 100, 0.77) -118.86%, rgba(100, 123, 100, 0) 25.62%, rgba(100, 123, 100, 0) 98.53%), #ffffff;
+  border-radius: 8px;
+  padding: 24px 160px 120px 32px;
+}
+.our-team-item:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.our-team-subtitle {
+  font-weight: 500;
+  margin: 0;
+}
+
+.our-team-title {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+  margin: 0;
+}
+
+blockquote {
+  position: absolute;
+  bottom: 24px;
+  max-width: 308px;
+  font-style: italic;
+  letter-spacing: 0.04em;
+  margin: 0;
+}
+
+.test {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+}
+
 .features {
   position: relative;
   padding-bottom: 32px;
@@ -559,7 +596,7 @@ p {
 .container {
   width: 100%;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 24px;
 }
 @media screen and (min-width: 420px) and (max-width: 1199px) {
   .container {
