@@ -116,6 +116,29 @@ p {
   text-decoration: none;
 }
 
+.about {
+  position: relative;
+  margin-top: 64px;
+}
+@media screen and (min-width: 420px) and (max-width: 1199px) {
+  .about::before {
+    position: absolute;
+    z-index: -1;
+    top: 16px;
+    right: 26px;
+    width: 360px;
+    height: 334px;
+    background-image: linear-gradient(164.26deg, rgba(239, 128, 49, 0) -335.51%, rgba(239, 128, 49, 0.15) -20.24%, rgba(239, 128, 49, 0) 119.45%);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    content: "";
+  }
+}
+
+.about-title {
+  padding-top: 64px;
+}
+
 .advantages {
   position: relative;
 }
@@ -280,6 +303,7 @@ p {
 
 .features {
   position: relative;
+  padding-bottom: 32px;
 }
 @media screen and (min-width: 1200px) and (max-width: 1920px) {
   .features::before {
@@ -542,4 +566,8 @@ p {
   .container {
     width: 1200px;
   }
+}
+
+.section {
+  padding-bottom: 96px;
 }/*# sourceMappingURL=main.css.map */

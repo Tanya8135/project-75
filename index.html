@@ -22,7 +22,7 @@
     />
 
     <link rel="stylesheet" href="./css/main.min.css" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   </head>
   <body>
     <!-- Header -->
@@ -35,8 +35,12 @@
             </a>
 
             <ul class="header__menu">
-              <li><a class="header__link link" href="#benefits">Benefits</a></li>
-              <li><a class="header__link link" href="#features">Features</a></li>
+              <li>
+                <a class="header__link link" href="#benefits">Benefits</a>
+              </li>
+              <li>
+                <a class="header__link link" href="#features">Features</a>
+              </li>
               <li><a class="header__link link" href="#about">About</a></li>
               <li><a class="header__link link" href="#team">Team</a></li>
             </ul>
@@ -175,7 +179,7 @@
       </section>
 
       <!-- Features -->
-      <section class="features section" id="features">
+      <section class="features" id="features">
         <div class="container">
           <h2 class="heading-title" data-aos="fade-right">Features</h2>
           <p class="heading-subtitle">What we can apply</p>
@@ -224,6 +228,39 @@
               </div>
             </li>
           </ul>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section class="about" id="about">
+        <div class="container">
+          <img
+            srcset="
+              ./images/people_360.jpg    360w,
+              ./images/people_570.jpg    570w,
+              ./images/people@2_360.jpg  720w,
+              ./images/people@2_570.jpg 1140w
+            "
+            sizes="(min-width: 1200px) 570px, (min-width: 320px) 360px, 100vw"
+            src="./images/people_360.jpg"
+            alt="People-team"
+          />
+          <h2 class="heading-title about-title" data-aos="fade-right">About us</h2>
+          <p class="heading-subtitle">Who we are</p>
+          <p class="heading-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit quis
+            vitae nullam aliquet dignissim quis. Vel, faucibus ac justo aliquam
+            donec enim, commodo fermentum vitae. Et velit sceleris, commodo
+            entum vitaefermentum vitae. Et velit sceleris nullam aliquet
+            dignissim
+          </p>
+
+          <button class="button" type="button">
+            Get started
+            <svg width="24" height="16" class="arrow">
+              <use href="./images/icons.svg#icon-arrow"></use>
+            </svg>
+          </button>
         </div>
       </section>
     </main>

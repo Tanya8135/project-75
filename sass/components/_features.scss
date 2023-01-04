@@ -1,5 +1,6 @@
 .features {
   position: relative;
+  padding-bottom: 32px;
 
   @include desktop {
     &::before {

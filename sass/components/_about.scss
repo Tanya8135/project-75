@@ -1,0 +1,22 @@
+.about {
+  position: relative;
+  margin-top: 64px;
+
+  @include mobile {
+    &::before {
+      position: absolute;
+      z-index: -1;
+      top: 16px;
+      right: 26px;
+      width: 360px;
+      height: 334px;
+      background-image: $bg-img-section;
+      transform: rotate(180deg);
+      content: '';
+    }
+  }
+}
+
+.about-title {
+  padding-top: 64px;
+}
