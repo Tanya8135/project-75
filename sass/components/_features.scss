@@ -5,7 +5,7 @@
     &::before {
       position: absolute;
       z-index: -1;
-      bottom: 64px;
+      bottom: 0px;
       right: 0;
       width: 600px;
       height: 160px;
@@ -18,7 +18,7 @@
   &::after {
     position: absolute;
     z-index: -1;
-    bottom: 64px;
+    bottom: 0px;
     left: 0;
     width: 224px;
     height: 224px;

@@ -109,9 +109,8 @@
 }
 
 .advantage-card-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %flex-centered;
+
   fill: $brand-color;
   background: $bg-white;
   border-radius: 8px;

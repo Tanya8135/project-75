@@ -39,40 +39,16 @@
   margin-right: 40px;
 }
 
-.btn-basic {
+.advantage-card-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #fefefe;
-  line-height: 1.5;
-  text-transform: uppercase;
-  padding: 24px;
-  gap: 16px;
-  border-radius: 2px;
-  background: linear-gradient(102.3deg, #647b64 -4.62%, #66ac66 178.22%);
-  -webkit-box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.19);
-          box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.19);
-  outline: none;
-  border: none;
-  cursor: none; /* только для mobile версии */
-  fill: #fefefe;
-}
-@media screen and (min-width: 1200px) and (max-width: 1920px) {
-  .btn-basic {
-    cursor: pointer;
-  }
-}
-.btn-basic:hover {
-  background: #fefefe;
-  color: #647b64;
-  fill: #647b64;
-}
-.btn-basic:active {
-  -webkit-box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.4);
-          box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.4);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 ::-moz-selection {
@@ -233,15 +209,6 @@ p {
 }
 
 .advantage-card-icon {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   fill: #647b64;
   background: #ffffff;
   border-radius: 8px;
@@ -300,6 +267,11 @@ p {
   background-color: #fefefe;
 }
 
+.button:active {
+  -webkit-box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.4);
+          box-shadow: 0px 20px 40px rgba(128, 143, 150, 0.4);
+}
+
 .button--small {
   padding: 12px 16px;
   text-transform: capitalize;
@@ -313,7 +285,7 @@ p {
   .features::before {
     position: absolute;
     z-index: -1;
-    bottom: 64px;
+    bottom: 0px;
     right: 0;
     width: 600px;
     height: 160px;
@@ -326,7 +298,7 @@ p {
 .features::after {
   position: absolute;
   z-index: -1;
-  bottom: 64px;
+  bottom: 0px;
   left: 0;
   width: 224px;
   height: 224px;

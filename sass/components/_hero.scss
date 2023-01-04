@@ -46,10 +46,6 @@
   margin: 0 0 40px;
 }
 
-.btn-basic {
-  @extend %btn-basic;
-}
-
 .hero-img {
   @media screen and (min-width: 320px) and (max-width: 1167px) {
     display: none;
