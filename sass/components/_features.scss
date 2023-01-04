@@ -46,10 +46,11 @@
   flex-basis: calc((100% - 88px) / 3);
 }
 
-// .features-item {
-//   &:not(:last-child) {
-//     margin-bottom: 32px;
-//   }
+.features-item {
+  &:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
 
 //   @include desktop {
 //     &:not(:last-child) {
