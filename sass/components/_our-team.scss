@@ -1,37 +1,43 @@
-.our-team-list {
-    @include desktop {
-        display: flex;
-        gap: 32px;
-        flex-wrap: wrap;
-    }
-}
-
-.our-team-item {
-  position: relative;
-  background: $bg-white-gradient;
-  border-radius: 8px;
-  padding: 24px 160px 120px 32px;
-
-  @media screen and (min-width: 320px) and (max-width: 1199px) {
-    &:not(:last-child) {
-      margin-bottom: 32px;
-    }
-  }
-
+.team {
   @include desktop {
-    flex-basis: calc((100% - 64px) / 3);
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    position: relative;
+    background: $bg-white-gradient;
+    border-radius: 8px;
+    padding: 24px 160px 120px 32px;
+
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
+      &:not(:last-child) {
+        margin-bottom: 32px;
+      }
+    }
+
+    @include desktop {
+      flex-basis: calc((100% - 64px) / 3);
+    }
   }
 }
 
-.our-team-subtitle {
-  font-weight: 500;
-  margin: 0;
-}
+.name {
+  position: absolute;
+  top: 24px;
+  right: 32px;
 
-.our-team-title {
-  @include font(14px, 500, 1.6);
+  &__subtitle {
+    font-weight: 500;
+    margin: 0;
+  }
 
-  margin: 0;
+  &__title {
+    @include font(14px, 500, 1.6);
+
+    margin: 0;
+  }
 }
 
 blockquote {
@@ -41,10 +47,4 @@ blockquote {
   font-style: italic;
   letter-spacing: 0.04em;
   margin: 0;
-}
-
-.test {
-  position: absolute;
-  top: 24px;
-  right: 32px;
 }
