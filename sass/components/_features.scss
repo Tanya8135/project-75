@@ -80,9 +80,7 @@
   }
 }
 
-.features-title {
-  @include font(24px, 500, 1.5);
-
+.card-title__features {
   padding-top: 32px;
   margin-bottom: 16px;
 }
@@ -91,6 +89,7 @@
   text-transform: uppercase;
 }
 
+// посмотреть где встречается точно такой же шрифт.
 .features-text {
   letter-spacing: 0.04em;
   margin-bottom: 0;

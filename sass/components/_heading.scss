@@ -1,4 +1,4 @@
-.heading-title {
+.heading__title {
   margin: 0 0 8px;
   color: $title-color;
   font-size: 24px;
@@ -6,7 +6,7 @@
   text-transform: uppercase;
 }
 
-.heading-subtitle {
+.heading__subtitle {
   margin: 0 0 40px;
   color: $subtitle-color;
   font-size: 36px;
@@ -15,6 +15,6 @@
   text-transform: uppercase;
 }
 
-.heading-text {
+.heading__text {
   letter-spacing: 0.04em;
 }
