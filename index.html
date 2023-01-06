@@ -323,12 +323,120 @@
 
     <!-- Footer -->
     <footer class="footer">
-      <div class="container">
-        <a href="">
-          <img src="./images/logo.svg" alt="Awesome UI logo" />
-        </a>
+      <div class="container footer-container">
+        <div class="common-container">
+          <a href="">
+            <img src="./images/logo.svg" alt="Awesome UI logo" />
+          </a>
+
+          <p class="heading__text footer-info">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          </p>
+          <p class="heading__text">Copyright &copy; 2022 AWESOME</p>
+          <p class="heading__text reserved">All rights reserved</p>
+
+          <address class="social">
+            <ul class="social-list">
+              <li class="social-item">
+                <a class="social-link" href="">
+                  <svg width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a class="social-link" href="">
+                  <svg width="16" height="16">
+                    <use href="./images/icons.svg#icon-dribbble"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a class="social-link" href="">
+                  <svg width="16" height="16">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a class="social-link" href="">
+                  <svg width="16" height="16">
+                    <use href="./images/icons.svg#icon-you-tube"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="register-container">
+          <div class="company-container">
+            <h2 hidden></h2>
+            <h3 class="footer-title footer-title__register">Company</h3>
+            <ul class="register-list">
+              <li class="register-item">
+                <a class="register-link link" href="">Lorem Ipsum 1</a>
+              </li>
+              <li class="register-item">
+                <a class="register-link link" href="">Lorem 2</a>
+              </li>
+              <li class="register-item">
+                <a class="register-link link" href="">Lorem 3</a>
+              </li>
+              <li class="register-item">
+                <a class="register-link link" href="">Lorem 4</a>
+              </li>
+              <li class="register-item">
+                <a class="register-link link" href="">Lorem 5</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="support-container">
+            <h3 class="footer-title footer-title__register">Support</h3>
+            <ul class="register">
+              <li class="register-item">
+                <a class="register-link link" href="">Lorem Ipsum 6</a>
+              </li>
+              <li class="register-item">
+                <a class="register-link link" href="">Lorem Ipsum 7</a>
+              </li>
+              <li class="register-item">
+                <a class="register-link link" href="">Lorem Ipsum 8</a>
+              </li>
+              <li class="register-item">
+                <a class="register-link link" href="">Lorem Ipsum 9</a>
+              </li>
+              <li class="register-item">
+                <a class="register-link link" href="">Lorem Ipsum 10</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="send-container">
+          <h3 class="footer-title footer-title__send">Send message</h3>
+          <label class="comment">
+            <textarea
+              name="comment"
+              rows="6"
+              class="comment__plh comment-plh"
+              placeholder=" "
+            ></textarea>
+            <span class="comment__input">Your email address</span>
+          </label>
+
+          <button class="button" type="button">
+            Send message
+            <svg width="24" height="16" class="arrow">
+              <use href="./images/icons.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </footer>
+
+    <!-- JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

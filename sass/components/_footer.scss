@@ -1,0 +1,107 @@
+.footer {
+  @include desktop {
+    padding: 48px 0;
+  }
+  background-color: $bg-footer;
+  padding: 40px 0;
+}
+
+.footer-info {
+  width: 268px;
+  padding-top: 16px;
+}
+
+.reserved {
+  margin-bottom: 24px;
+}
+
+.social-list {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background-color: $bg-social;
+  border-radius: 50%;
+  fill: $brand-color;
+}
+
+.register-container {
+  @include desktop {
+    padding: 0;
+  }
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 40px 0px;
+}
+
+.footer-title {
+  font-weight: 500;
+  color: $brand-color;
+
+  &__register {
+    margin-bottom: 24px;
+  }
+
+  &__send {
+    margin-bottom: 16px;
+  }
+}
+
+.register-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.register-link {
+  color: $register-link;
+}
+
+/* Form -------------------------------------------------------- */
+.footer-container {
+  @include desktop {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.comment {
+  position: relative;
+
+  &__plh {
+    min-width: 268px;
+    padding: 16px 24px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 2px;
+    outline: none;
+    color: $send-color-plh;
+    resize: none;
+  }
+
+  &__plh:not(:placeholder-shown) + &__input {
+    color: transparent;
+    overflow: hidden;
+  }
+
+  &__input {
+    position: absolute;
+    // top: 0;
+    left: 0;
+    padding: 16px 24px;
+
+    font-size: 14px;
+    line-height: 1.6;
+    color: $send-color-plh;
+  }
+}
+
+.comment-plh {
+  margin-bottom: 12px;
+}
